@@ -1,0 +1,44 @@
+char ch;char string[20];
+scanf("%c",&ch);getchar();//getchar();一定要有，多次bug结果
+                          //&常忘，报错就是那个关于指针的错
+scanf("%s",string);这个每一次吸收一个字符串，也就可以分成一个个单词  chap13_9第183行
+scanf("%s" %s,string1,string2)
+
+
+getchar()   putchar()
+
+getc()  putc()  书13.2.3
+从fp指定的文件中获取一个字符:ch = getc(fp);
+把字符ch放入FILE指针fpout指定的文件中:putc(ch, fpout);
+
+gets()经常和 puts()函数配对使用，该函数用于显示字符串，并在末尾添加【换行符】
+【gets()编译器不许】gets()函数简单易用，它读取整行输入，直至遇到换行符，然后丢弃换行符，储存其余字符，并在这些字符的末尾添加一个空字符使其成为一个 C 字符串。它无法检查数组是否装得下输入行
+
+**gets()函数     P691   13.4.2 fgets()和fputs()函数：P972
+fgets()函数的第2个参数指明了读入字符的最大数量。如果该参数的值是n，那么fgets()将读入n-1个字符，或者读到遇到的第一个【换行符】为止
+fgets()函数读取输入直到第 1 个【换行符】的后面，会把换行符储存在字符串中；或读到文件结尾；或者读取STLEN-1 个字符（读取字符比words长时，fgets()在末尾添加一个空字符使之成为一个字符串。
+因为fgets读到第一个换行符，能把文档切成一行行的
+char words[STLEN];
+fgets(words, STLEN, stdin);
+fputs()不在字符串末尾添加【换行符】
+fputs(words, stdout);
+fgets()：chap13_11  chap14_2
+
+13.4.1 fprintf()和fscanf()函数
+fscanf(stdin, "%40s", words)
+fprintf(stdout, "Can't open \"wordy\" file.\n");  printf函数+fp
+
+rewind(fp); /* 返回到文件开始处 */   chap13_9
+fseek chap13_10   13.5.1 fseek()和ftell()的工作原理
+
+strlen 网上说：strlen计算时，一定要确保字符数组是以空字符结束的，如果没有则可能沿着数组在内存中的位置不断向前寻找，知道遇到空字符才停下来。
+strlen统计空字符前面的字符个数
+chap11_7（并且有字符串长度问题，我的字符串8个字符，group[7]就结束了，不是group[8]，多的一个导致最后一个一直乱码  chap12_9的150-155行
+
+11.9 把字符串转换为数字 chap14_2 atoi() strtol()
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+https://blog.csdn.net/baidu_39486224/article/details/83007683
+定义一个数组char a[10];
+怎么给这个数组赋值呢？
+1、定义的时候直接用字符串赋值
+char a[10]="hello";
+注意：不能先定义再给它赋值，如char a[10]; a[10]="hello";这样是错误的！
+2、对数组中字符逐个赋值
+char a[10]={'h','e','l','l','o'};
+3、利用strcpy & memset
+char a[10]; strcpy(a, "hello");
+int str_len = strlen(message);char num[str_len];memset(num,' ',str_len);
+     同样的，字符串比较大小用strcmp，不能用等号
+
+char file[WORD_MAX_LEN] = {0};//指定了第一个字符，剩余的全部用'\0'填充
+
+sizeof：全部长度，也是初始化时那个长度  
+strlen：\0前的所有  
+ \0一直要跟在最后的，所以最多放n-1个char进来：如 char word[5][3]; strcpy(word[0],"bs");只能2个字母
