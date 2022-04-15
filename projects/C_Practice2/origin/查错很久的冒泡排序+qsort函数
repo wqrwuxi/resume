@@ -1,0 +1,40 @@
+  for(int i=0;i<21-1;i++)
+    {
+         for(int j=0;j<21-i-1;j++)
+         {
+             if (letter_usedd[i]>letter_usedd[i+1])//是j！查了好久，i是轮数阿
+             {
+                 temp=letter_usedd[i];
+                 letter_usedd[i]=letter_usedd[i+1];
+                 letter_usedd[i+1]=temp;
+             }
+         }
+    }
+
+正确版本：
+for(int i=0;i<21-1;i++)
+    {
+         for(int j=0;j<21-i-1;j++)
+         {
+             if (letter_usedd[j]>=letter_usedd[j+1]) //是j！查了好久，i是轮数阿
+             {
+                 temp=letter_usedd[j];
+                 letter_usedd[j]=letter_usedd[j+1];
+                 letter_usedd[j+1]=temp;
+             }
+         }
+    }
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+int mycompare(const void* a,const void* b)
+{
+    if ( *(char*)a <  *(char*)b ) return -1;
+    if ( *(char*)a == *(char*)b ) return 0;
+    if ( *(char*)a >  *(char*)b ) return 1;
+}
+qsort(letter_usedd,count*letter_num_day,sizeof(char),mycompare);
+https://www.cnblogs.com/laizhenghong2012/p/8442270.html
+
+
+
+
