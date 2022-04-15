@@ -1,0 +1,152 @@
+orgin
+
+name:T1 priority:0 burst8 arrival_time0
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+name:T2 priority:1 burst4 arrival_time1
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+name:T3 priority:2 burst9 arrival_time2
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+name:T4 priority:3 burst5 arrival_time3
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+FCFS 1
+
+head_task
+
+name:T1 priority:0 burst8 arrival_time0
+start_time:0 end_time:8 waiting_time0 sched_sum0
+
+name:T2 priority:1 burst4 arrival_time1
+start_time:8 end_time:12 waiting_time7 sched_sum0
+
+name:T3 priority:2 burst9 arrival_time2
+start_time:12 end_time:21 waiting_time10 sched_sum0
+
+name:T4 priority:3 burst5 arrival_time3
+start_time:21 end_time:26 waiting_time18 sched_sum0
+
+====================================================
+
+orgin
+
+name:T1 priority:0 burst8 arrival_time0
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+name:T2 priority:1 burst4 arrival_time1
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+name:T3 priority:2 burst9 arrival_time2
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+name:T4 priority:3 burst5 arrival_time3
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+RR 2
+
+head_task
+
+name:T1 priority:0 burst8 arrival_time0
+start_time:0 end_time:20 waiting_time12 sched_sum8
+
+name:T2 priority:1 burst4 arrival_time1
+start_time:4 end_time:8 waiting_time3 sched_sum4
+
+name:T3 priority:2 burst9 arrival_time2
+start_time:8 end_time:26 waiting_time15 sched_sum9
+
+name:T4 priority:3 burst5 arrival_time3
+start_time:12 end_time:25 waiting_time17 sched_sum5
+
+head_sched
+
+name:T1 priority:-1 burst-1 arrival_time-1
+start_time:0 end_time:4 waiting_time-1 sched_sum4
+
+name:T2 priority:-1 burst-1 arrival_time-1
+start_time:4 end_time:8 waiting_time-1 sched_sum4
+
+name:T3 priority:-1 burst-1 arrival_time-1
+start_time:8 end_time:12 waiting_time-1 sched_sum4
+
+name:T4 priority:-1 burst-1 arrival_time-1
+start_time:12 end_time:16 waiting_time-1 sched_sum4
+
+name:T1 priority:-1 burst-1 arrival_time-1
+start_time:16 end_time:20 waiting_time-1 sched_sum8
+
+name:T3 priority:-1 burst-1 arrival_time-1
+start_time:20 end_time:24 waiting_time-1 sched_sum8
+
+name:T4 priority:-1 burst-1 arrival_time-1
+start_time:24 end_time:25 waiting_time-1 sched_sum5
+
+name:T3 priority:-1 burst-1 arrival_time-1
+start_time:25 end_time:26 waiting_time-1 sched_sum9
+
+===================================================
+
+orgin
+
+name:T1 priority:0 burst8 arrival_time0
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+name:T2 priority:1 burst4 arrival_time1
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+name:T3 priority:2 burst9 arrival_time2
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+name:T4 priority:3 burst5 arrival_time3
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+NSJF 3
+
+head_task
+
+name:T1 priority:0 burst8 arrival_time0
+start_time:0 end_time:8 waiting_time0 sched_sum0
+
+name:T2 priority:1 burst4 arrival_time1
+start_time:8 end_time:12 waiting_time7 sched_sum0
+
+name:T3 priority:2 burst9 arrival_time2
+start_time:17 end_time:26 waiting_time15 sched_sum0
+
+name:T4 priority:3 burst5 arrival_time3
+start_time:12 end_time:17 waiting_time9 sched_sum0
+
+================================================
+
+orgin
+
+name:T1 priority:0 burst8 arrival_time0
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+name:T2 priority:1 burst4 arrival_time1
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+name:T3 priority:2 burst9 arrival_time2
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+name:T4 priority:3 burst5 arrival_time3
+start_time:-1 end_time:0 waiting_time0 sched_sum0
+
+PSJF 4
+
+head_task
+
+name:T1 priority:0 burst8 arrival_time0
+start_time:0 end_time:17 waiting_time9 sched_sum0
+
+name:T2 priority:1 burst4 arrival_time1
+start_time:1 end_time:5 waiting_time0 sched_sum0
+
+name:T3 priority:2 burst9 arrival_time2
+start_time:17 end_time:26 waiting_time15 sched_sum0
+
+name:T4 priority:3 burst5 arrival_time3
+start_time:5 end_time:10 waiting_time2 sched_sum0
+
